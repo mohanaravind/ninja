@@ -1,0 +1,19 @@
+<link rel="import" href="../lib/polymer.html">
+
+<polymer-element name="ninja-collapse">
+	<template>
+		<style>
+			@import url(ninja-collapse.css);
+		</style>
+
+		<div class="header" on-click="{{ toggle }}">
+			<content select="header"></content>
+		</div>
+
+		<div id="section" class="section">
+			<content select="section"></content>
+		</div>
+	</template>
+
+	<script src="ninja-collapse.js"></script>
+</polymer-element>
